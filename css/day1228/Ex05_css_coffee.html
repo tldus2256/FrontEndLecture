@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 1px dashed black;
+            width: 700px;
+            height: 800px;
+            border-radius: 4px;
+            float: left;
+
+        }
+        .head{
+            border: 1px solid black;
+            height: 150px;
+            background-color: wheat;        
+        }
+        h1{
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        .head2{
+        
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+            background-color: wheat;
+
+        }
+        .order{
+            text-align: center;
+        }
+        .main2{
+            float: right;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>MENU</h1>
+        </div>
+        <div class="menu">
+            <div class="coffeeMenu">
+                <img src="coffee.PNG" width="150px" height="100px">
+                <p>에스프레소 1000원</p>
+                <select id="select">
+                    <option value="option1">0</option>
+                    <option value="option2">1</option>
+                    <option value="option3">2</option>
+                </select>
+            </div>
+            <div class="coffeeMenu">
+                <img src="coffeeeee.PNG"width="150px" height="100px">
+                <p>아메리카노 2000원</p>
+                <select id="select">
+                    <option value="option1">0</option>
+                    <option value="option2">1</option>
+                    <option value="option3">2</option>
+                </select>
+            </div>
+            <div class="coffeeMenu">
+                <img src="cofffffeeeee.PNG"width="150px" height="100px">
+                <p>카페라떼 3000원</p>
+                <select id="select">
+                    <option value="option1">0</option>
+                    <option value="option2">1</option>
+                    <option value="option3">2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="head2">
+            <h1>주문내역</h1>
+        </div>
+        
+        <div class="order">
+        총합: <input type="text"> 원<br>
+        <button type="submit">주문하기</button>
+        </div>
+
+
+    </div>
+</body>
+</html>

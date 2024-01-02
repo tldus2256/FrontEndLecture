@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main{
+            /* border: 1px solid black; */
+            width: 500px;
+            margin: auto;
+            padding: 10px
+        }
+        h1{
+            text-align: center;
+        }
+        #top{
+            /* border: 1px solid green; */
+            margin-bottom: 10px;
+        }
+
+        #middle{
+            border: 1px solid gray;
+            margin-bottom: 10px;
+            padding: 50px 10px;
+        }
+
+        #bottom{
+            /* border: 1px solid green; */
+        }
+
+        #inputDiv{
+            /* border: 1px solid blue; */
+            width: 350px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        #btnDiv{
+            /* border: 1px solid blue; */
+            width: 350px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .inputTag{
+            width: 350px;
+            padding: 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            height: 50px;
+            font-size: large;
+        }
+        .inputTag:focus{
+            outline: none;
+        }
+        .inputTag::placeholder{
+            font-size: large;
+        }
+
+        #loginBtn{
+            background-color: rgba(255, 0, 0, 0.89);
+            color: white;
+            width: 350px;
+            padding: 15px;
+            font-size: large;
+            border: 0px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        #qrBtn{
+            background-color: ;
+            color : black;
+            width: 310px;
+            padding: 20px;
+            font-size: large;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hr-sect {
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.35);
+            font-size: 12px;
+            margin: 8px 0px;
+        }
+        .hr-sect::before,
+        .hr-sect::after {
+            content: "";
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.35);
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+            margin: 0px 16px;   /* 마진 값으로 선의 길이를 조절 */
+        }
+        #joinDiv{
+            /* border: 1px solid blue; */
+            width: 500px; 
+            margin-left: 50px;
+                  
+        }
+        .joinTag{
+            text-decoration: none;
+            color: black;
+        }
+        .padding100{
+            padding-left: 110px;
+        }
+
+        #hi{
+            margin-left: 130px;
+        }
+        #hi2{
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <h1> <img src="img/11st.svg"/> </h1>
+        </div>
+        <div id="middle">
+            <div id="inputDiv">
+                <input type="text" class="inputTag" placeholder="아이디 입력"/>
+                <br/>
+                <input type="password" class="inputTag" placeholder="비밀번호 8자~20자"/>
+            </div>
+                
+            <div id="btnDiv">
+                <button type="button" id="loginBtn">로그인</button>
+                <input type="radio" name="gender" id="gender1"/> 
+                <label for="gender1"> 로그인 상태 유지</label>
+                <a href="#" id="qrBtn">또는 SNS 아이디로 로그인</a>
+            </div>
+
+            <div>
+                <div id="hi">
+                <img src="img/sns-kakao.svg"/>
+                <img src="img/sns-naver.svg"/>
+                <img src="img/sns-tid.svg"/>
+                <img src="img/sns-apple.svg"/>
+                </div>
+
+                <br/>
+                
+                <div id="hi2">
+                <img src="img/sns-payco.svg"/>
+                <img src="img/sns-facebook.svg"/>
+                <img src="img/sns-phone.svg"/>
+            </div>
+
+            <div id="joinDiv"> 
+                <a href="#" class="joinTag">아이디 찾기</a>
+                <a href="#" class="joinTag">비밀번호찾기</a>
+                <a href="#" class="joinTag" >비회원 주문조회</a>
+                <a href="#" class="joinTag">회원가입</a>
+            </div>
+
+        </div>
+        <div id="bottom">
+            <a href="#" id="po"> <img src="img/banner.png" width="450px"/> </a>
+        </div>
+
+    </div>
+</body>
+</html>
