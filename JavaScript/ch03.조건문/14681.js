@@ -1,15 +1,15 @@
-let -1000<=x<=1000;
-let -1000<=y<=1000;
+let x;
+let y;
 
-if(x,y>0){
-    console.log(`1`);
+if(x>0 && y>0){
+    console.log(1);
 }
 else if(x<0 && y>0){
-    console.log(`2`);
+    console.log(2);
 }
 else if(x<0 && y<0){
-    console.log(`3`);
+    console.log(3);
 }
-else if(x>0 && y>0){
-    console.log(`4`);
+else {
+    console.log(4);
 }

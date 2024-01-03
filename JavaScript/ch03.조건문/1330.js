@@ -1,5 +1,5 @@
-let A = Math.ceil(Math.random() );
-let B = Math.ceil(Math.random() );
+let A = 4;
+let B = 6;
 
 if(A>B){
     console.log(`>`);
