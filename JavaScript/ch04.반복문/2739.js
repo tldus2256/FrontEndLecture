@@ -5,10 +5,10 @@
 
 
 
-for(let i=2 ; i<=9; i=i+1){
-    
-    for(let k=1; k<=9; k= k+1){
-        console.log(`${i} * ${k} = ${i*k}`);    
+for (let i = 2; i <= 9; i = i + 1) {
+    console.log(`${i}단 입니다.`);
+    for (let k = 1; k <= 9; k = k + 1) {
+        console.log(`${i} * ${k} = ${i * k}`);
     }
-        console.log('');
+    console.log('');
 }

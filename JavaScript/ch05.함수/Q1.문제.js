@@ -5,7 +5,7 @@ let sampleArray = [43, 17, 25, 36, 98, 73];
 function sumArray(arr) {
     let sum = 0;
     for (num of arr) {
-        sum += num;
+        sum += num;             
     }
     // for(let i =0; i<arr.length; i++){
     //     sum += arr[i];
