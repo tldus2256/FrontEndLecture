@@ -6,7 +6,7 @@ function isDivisible(year){
         console.log('Bye');
     }
 }
-let year = 2023;
+let year = 2023;            // for(let i = 2023;i <= 2040; i++)
 while(year<=2040){
     isDivisible(year);
     year++;

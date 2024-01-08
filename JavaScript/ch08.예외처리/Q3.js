@@ -17,3 +17,7 @@ function sum_sum(arr){
     return big-small;
 }
 console.log(sum_sum(array));
+
+
+
+
