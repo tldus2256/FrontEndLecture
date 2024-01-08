@@ -3,7 +3,7 @@
 // 1. 배열 생성
 let fruits = ['apple', 'banana', 'cherry'];
 let cars = new Array('Audi', 'Benz', 'BMW');
-// console.log(cars);
+console.log(cars);
 
 // 2. 배열 속성
 console.log(cars.length);
@@ -15,7 +15,7 @@ console.log(fruits);
 console.log(newFruits);
 
 // 3-2. join()
-console.log(`내가 갖고 싶은 차는 ${cars.join(', ')} 입니다.`);
+console.log(`내가 갖고 싶은 차는 ${cars.join('---')} 입니다.`);
 
 // 3-3. pop()*      * 자기 파괴적(self destructive) 메소드
 console.log(cars.pop());                // 맨 뒤에 있는 요소를 끄집어 냄
