@@ -1,0 +1,38 @@
+<!-- 입력으로 받은 다음의 가격을 내림차순으로 출력하는 프로그램을 만드세요.
+
+​
+
+51900;83000;158000;367500;250000;59200;128500;1304000 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            let btn = document.getElementById('btn');
+            btn.onclick = function () {
+                let num = document.getElementById('name').value;
+                let arr = num.split(";");
+                let re = document.getElementById('result');
+                arr.sort(function (a, b) {
+                    return b - a;
+                });
+                re.innerH
+                      TML = arr.join(", ");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="name">
+    <button id="btn">버튼</button>
+    <span id="result"></span>
+
+</body>
+
+</html>

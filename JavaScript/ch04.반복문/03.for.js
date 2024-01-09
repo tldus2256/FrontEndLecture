@@ -36,3 +36,7 @@ for (let fruit of fruits) {
     fruitstr += fruit + ',';
 }
 console.log(fruitstr);
+
+
+
+

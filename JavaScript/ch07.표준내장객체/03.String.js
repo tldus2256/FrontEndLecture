@@ -76,3 +76,4 @@ if (hello.indexOf(search) >= 0)
 else
     console.log(`찾고싶은 단어 ${search} 이/가 문장안에 없습니다.`);
 
+

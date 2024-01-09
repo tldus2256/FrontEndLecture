@@ -43,6 +43,19 @@ for(let i=0; i < 24; i++){
 }
 console.log(answer);
 
+// --------------------------------------------------------------------------------//
+let displayTime = 0;
+for (let hour = 0; hour <= 23; hour++){
+    for(let miniute = 0; minute <= 59; minute++){
+        let clock = hour + ':' +minute;
+        if (clock.indexOf('3') >= 0)
+        displayTime += 60;
+    }
+}
+console.log(`하루동안 3이 표시되는 시간은 ${displayTime}초 입니다.`);
+
+
+
 
 
 // 3. 두개의 세자리 곱해서 나온 결과가 palindrome 일때
@@ -68,6 +81,23 @@ let anw = answer2.pop();    // 마지막꺼 나오는거
 
 console.log(`가장큰 Palindrome 수는 ${anw.num1} 와 ${anw.num2}를 곱한값인 ${anw.palindrome} 입니다.`);
 
+//----------------------------------------------------------------------------------------------------
+
+function isPalindrome(s) {
+    return s == s.split('').reverse().join('');
+}
+let maxPal = 0, max1 = 0, max2 = 0;
+for (let i = 100; i<=999; i++) {
+    for (let k=i; k<=999; k++){
+        let mul = i * k;
+        if (isPalindrome(string(mul))) {
+            if (mul > maxPal) {
+                maxPal = mul; max1 = i, max2 = k;
+            }
+        }
+    }
+}
+console.log(`${max1} x ${max2} = ${maxPal}`);
 
 // C:/Workspace/WebProject/03.JavaScript/ch07.표준내장객체/04.String연습.js
 // 에서 파일명(04.String연습.js)만 출력하세요.
@@ -77,3 +107,14 @@ let str = 'C:/Workspace/WebProject/03.JavaScript/ch07.표준내장객체/04.Stri
 console.log(str.substring(str.indexOf('4') - 1));
 //2024-01-08T08:15:17.175Z
 //2024-01-08
+
+//-------------------------------------------------------------------------------------
+let path = 'C:/Workspace/WebProject/03.JavaScript/ch07.표준내장객체/04.String연습.js';
+
+// split 후 맨 마지막 요소
+let pathArr = path.split('/');
+console.log(pathArr[pathArr.length - 1]);
+
+// 맨 마지막에 있는 / 위치를 찾아서 substring 메소드를 찾는 방법
+let filIndex = path.lastIndexOf('/');
+console.log(path.substring(filIndex+1));
