@@ -11,19 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        window.onload = function () {
-            let btn = document.getElementById('btn');
-            btn.onclick = function () {
-                let num = document.getElementById('name').value;
+       $(document).ready(function () {
+            $('#btn').on('click', function () {
+                let num = $('#name').val();
                 let arr = num.split(";");
-                let re = document.getElementById('result');
                 arr.sort(function (a, b) {
                     return b - a;
                 });
-                re.innerHTML = arr.join(", ");
-            }
-
-        }
+                $('#result').html(arr.join(", "));
+            });
+        });
     </script>
 </head>
 
@@ -35,3 +32,4 @@
 </body>
 
 </html>
+
